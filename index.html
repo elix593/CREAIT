@@ -1,145 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Creait</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <style>
-        body { font-family: 'Roboto', sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creait - Transforma tu Aprendizaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-100 text-gray-800">
+
     <!-- Encabezado -->
-    <header class="bg-blue-500 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold">Creait</div>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-bold">Creait</a>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a class="hover:underline" href="index.html">Inicio</a></li>
-                    <li><a class="hover:underline" href="servicios.html">Servicios</a></li>
-                    <li><a class="hover:underline" href="#">Sobre Nosotros</a></li>
-                    <li><a class="hover:underline" href="#">Testimonios</a></li>
-                    <li><a class="hover:underline" href="#">Blog</a></li>
-                    <li><a class="hover:underline" href="#">Contacto</a></li>
-                </ul>
+                <a href="#" class="mx-2">Inicio</a>
+                <a href="#" class="mx-2">Servicios</a>
+                <a href="#" class="mx-2">Sobre Nosotros</a>
+                <a href="#" class="mx-2">Testimonios</a>
+                <a href="#" class="mx-2">Blog</a>
+                <a href="#" class="mx-2">Contacto</a>
             </nav>
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded">Iniciar Sesión / Registrarse</a>
         </div>
     </header>
+
     <!-- Banner Principal -->
-    <section class="relative">
-        <img alt="Imagen atractiva relacionada con la educación y la creatividad" class="w-full h-96 object-cover" src="https://placehold.co/1920x600"/>
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-4xl font-bold mb-4">Transforma tu aprendizaje con Creait</h1>
-            <a class="bg-green-500 text-white px-4 py-2 rounded" href="#">Descubre más</a>
+    <section class="bg-cover bg-center h-96" style="background-image: url('https://via.placeholder.com/1920x1080');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold">Transforma tu Aprendizaje con Creait</h1>
+                <p class="text-xl mt-4">Recursos Educativos Innovadores para tu Éxito Académico</p>
+                <a href="#" class="bg-blue-500 text-white px-6 py-3 mt-6 rounded">Descubre Nuestros Servicios</a>
+            </div>
         </div>
     </section>
+
     <!-- Introducción -->
-    <section class="py-12">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-4">Bienvenido a Creait</h2>
-                <p class="mb-4">En Creait, nos dedicamos a transformar la educación a través de la creatividad y la innovación. Nuestra misión es ayudarte a alcanzar tus metas académicas de manera eficiente y efectiva.</p>
-                <p>Nuestra visión es ser líderes en soluciones educativas personalizadas, brindando herramientas y recursos que potencien el aprendizaje de nuestros clientes.</p>
-            </div>
-            <div class="md:w-1/2 mt-8 md:mt-0">
-                <img alt="Imagen del equipo o del fundador Oswaldo Fajardo" class="rounded-lg shadow-lg" src="https://placehold.co/600x400"/>
-            </div>
+    <section class="container mx-auto p-8">
+        <p class="text-center text-lg">En Creait, nos dedicamos a proporcionar recursos educativos innovadores y de alta calidad. Nuestra misión es ayudar a los estudiantes a alcanzar la excelencia académica a través de la creatividad y el profesionalismo.</p>
+        <div class="text-center mt-4">
+            <a href="#" class="text-blue-500 underline">Más Información</a>
         </div>
     </section>
+
     <!-- Servicios Destacados -->
-    <section class="bg-gray-100 py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Nuestros Servicios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-chalkboard-teacher text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Creación de Diapositivas</h3>
-                    <p>Diseñamos diapositivas impactantes y efectivas para tus presentaciones.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-sitemap text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Organigramas y Mapas Conceptuales</h3>
-                    <p>Organiza tus ideas y proyectos con claridad y precisión.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-graduation-cap text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Tesis y Proyectos de Grado</h3>
-                    <p>Te ayudamos a estructurar y desarrollar tus trabajos académicos.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-book text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Planes de Estudio Personalizados</h3>
-                    <p>Elaboramos planes de estudio adaptados a tus necesidades.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-sticky-note text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Transformación de Apuntes y Notas</h3>
-                    <p>Convierte tus apuntes en recursos de estudio efectivos.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-pencil-alt text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Exámenes y Mini Exámenes</h3>
-                    <p>Prepara tus exámenes con nuestras herramientas y recursos.</p>
-                </div>
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Diseño de Recursos Educativos" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Diseño de Recursos Educativos</h3>
+                <p class="mb-4">Creación de diapositivas, infografías, esquemas, mapas conceptuales y otros recursos visuales para mejorar el aprendizaje.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Asesoría Académica" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Asesoría Académica</h3>
+                <p class="mb-4">Servicios de asesoría y tutoría para ayudar a los estudiantes a mejorar su rendimiento académico.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Elaboración de Trabajos Académicos" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Elaboración de Trabajos Académicos</h3>
+                <p class="mb-4">Redacción y edición de tesis, proyectos de grado, ensayos y otros trabajos académicos.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Transformación de Contenidos" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Transformación de Contenidos</h3>
+                <p class="mb-4">Transformación de apuntes, notas y otros materiales en contenido de alto valor y fácil comprensión.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Evaluación y Retroalimentación" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Evaluación y Retroalimentación</h3>
+                <p class="mb-4">Creación de exámenes, mini exámenes y evaluaciones para medir el rendimiento académico y proporcionar retroalimentación.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Desarrollo de Habilidades" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Desarrollo de Habilidades</h3>
+                <p class="mb-4">Programas y recursos para el desarrollo de habilidades académicas y profesionales.</p>
+                <a href="#" class="text-blue-500 underline">Más Información</a>
             </div>
         </div>
     </section>
+
     <!-- Testimonios -->
-    <section class="py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Testimonios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img alt="Foto de cliente satisfecho 1" class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/100x100"/>
-                    <p class="italic">"Creait ha transformado mi forma de estudiar. Sus recursos son increíbles."</p>
-                    <p class="font-bold mt-2">- Juan Pérez</p>
+    <section class="bg-gray-200 p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Lo Que Dicen Nuestros Clientes</h2>
+        <div class="container mx-auto">
+            <div class="flex overflow-x-auto">
+                <div class="flex-shrink-0 w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded shadow">
+                        <p class="italic mb-4">"Creait ha sido una gran ayuda para mis estudios. ¡Recomendado al 100%!"</p>
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Cliente 1" class="rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Juan Pérez</h4>
+                                <p class="text-gray-600">Estudiante</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img alt="Foto de cliente satisfecho 2" class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/100x100"/>
-                    <p class="italic">"Gracias a Creait, pude organizar mis ideas y presentar un proyecto excelente."</p>
-                    <p class="font-bold mt-2">- María López</p>
+                <div class="flex-shrink-0 w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded shadow">
+                        <p class="italic mb-4">"Los recursos de Creait son increíbles. ¡Me han ayudado mucho!"</p>
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Cliente 2" class="rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">María López</h4>
+                                <p class="text-gray-600">Estudiante</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img alt="Foto de cliente satisfecho 3" class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/100x100"/>
-                    <p class="italic">"Los planes de estudio personalizados me ayudaron a mejorar mis calificaciones."</p>
-                    <p class="font-bold mt-2">- Carlos García</p>
+                <div class="flex-shrink-0 w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded shadow">
+                        <p class="italic mb-4">"Excelente servicio y atención al cliente. ¡Muy satisfecho!"</p>
+                        <div class="flex items-center">
+                            <img src="https://via.placeholder.com/50" alt="Cliente 3" class="rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Carlos Gómez</h4>
+                                <p class="text-gray-600">Estudiante</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="bg-green-500 text-white px-4 py-2 rounded mt-8 inline-block" href="#">Ver más testimonios</a>
         </div>
     </section>
-    <!-- Llamada a la Acción -->
-    <section class="bg-blue-500 text-white py-12 text-center">
-        <h2 class="text-3xl font-bold mb-4">¿Listo para mejorar tu rendimiento académico?</h2>
-        <a class="bg-green-500 text-white px-4 py-2 rounded" href="#">¡Contáctanos hoy!</a>
+
+    <!-- Blog -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Nuestro Blog</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/300x200" alt="Artículo 1" class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">Título del Artículo 1</h3>
+                <p class="mb-4">Resumen del artículo 1...</p>
+                <a href="#" class="text-blue-500 underline">Leer Más</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/300x200" alt="Artículo 2" class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">Título del Artículo 2</h3>
+                <p class="mb-4">Resumen del artículo 2...</p>
+                <a href="#" class="text-blue-500 underline">Leer Más</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/300x200" alt="Artículo 3" class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">Título del Artículo 3</h3>
+                <p class="mb-4">Resumen del artículo 3...</p>
+                <a href="#" class="text-blue-500 underline">Leer Más</a>
+            </div>
+        </div>
     </section>
-    <!-- Pie de Página -->
-    <footer class="bg-gray-800 text-white py-8">
+
+    <!-- Llamado a la Acción -->
+    <section class="bg-blue-500 text-white p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">¿Listo para Transformar tu Aprendizaje?</h2>
         <div class="container mx-auto text-center">
-            <div class="mb-4">
-                <a class="hover:underline mx-2" href="index.html">Inicio</a>
-                <a class="hover:underline mx-2" href="servicios.html">Servicios</a>
-                <a class="hover:underline mx-2" href="#">Sobre Nosotros</a>
-                <a class="hover:underline mx-2" href="#">Testimonios</a>
-                <a class="hover:underline mx-2" href="#">Blog</a>
-                <a class="hover:underline mx-2" href="#">Contacto</a>
+            <form class="mb-4">
+                <div class="mb-4">
+                    <input type="text" placeholder="Nombre" class="w-full px-4 py-2 rounded">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Correo Electrónico" class="w-full px-4 py-2 rounded">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Mensaje" class="w-full px-4 py-2 rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-white text-blue-500 px-6 py-3 rounded">Envía tu Consulta</button>
+            </form>
+            <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded">Agenda tu Consulta Gratuita</a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-gray-800 text-white p-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Inicio</a></li>
+                        <li><a href="#" class="hover:underline">Servicios</a></li>
+                        <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:underline">Testimonios</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Información de Contacto</h3>
+                    <p>Dirección: 123 Calle Principal, Ciudad, País</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Correo Electrónico: contacto@creait.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Redes Sociales</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Facebook</a></li>
+                        <li><a href="#" class="hover:underline">Twitter</a></li>
+                        <li><a href="#" class="hover:underline">Instagram</a></li>
+                        <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Correo Electrónico" class="w-full px-4 py-2 rounded mb-4">
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Suscribirse</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-4">
-                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-                <p>Teléfono: +123 456 7890</p>
-                <p>Email: contacto@creait.com</p>
-            </div>
-            <div class="flex justify-center space-x-4">
-                <a class="text-white hover:text-gray-400" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="text-white hover:text-gray-400" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="text-white hover:text-gray-400" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="text-white hover:text-gray-400" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="text-center mt-8">
+                <p>&copy; 2023 Creait. Todos los derechos reservados.</p>
+                <p><a href="#" class="hover:underline">Política de Privacidad</a> | <a href="#" class="hover:underline">Términos de Servicio</a></p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
